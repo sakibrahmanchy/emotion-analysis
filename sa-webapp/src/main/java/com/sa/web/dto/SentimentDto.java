@@ -27,15 +27,15 @@ public class SentimentDto {
         return subjectivity;
     }
 
-    public float getSubjectivity() {
-        return polarity;
-    }
-
     public void setPolarity(float polarity) {
         this.polarity = polarity;
     }
 
-    public void setSubjectivity(float polarity) {
+    public float getSubjectivity() {
+        return subjectivity;
+    }
+
+    public void setSubjectivity(float subjectivity) {
         this.subjectivity = subjectivity;
     }
 
