@@ -4,17 +4,18 @@ public class SentimentDto {
 
     private String sentence;
     private float polarity;
+    private float subjectivity;
 
     public SentimentDto() {
     }
 
-    public SentimentDto(String sentence, float polarity) {
+    public SentimentDto(String sentence, float polarity, float subjectivity) {
         this.sentence = sentence;
         this.polarity = polarity;
+        this.subjectivity = subjectivity;
     }
 
     public String getSentence() {
-
         return sentence;
     }
 
@@ -23,6 +24,10 @@ public class SentimentDto {
     }
 
     public float getPolarity() {
+        return subjectivity;
+    }
+
+    public float getSubjectivity() {
         return polarity;
     }
 
@@ -30,11 +35,16 @@ public class SentimentDto {
         this.polarity = polarity;
     }
 
+    public void setSubjectivity(float polarity) {
+        this.subjectivity = subjectivity;
+    }
+
     @Override
     public String toString() {
         return "SentimentDto{" +
                 "sentence='" + sentence + '\'' +
                 ", polarity=" + polarity +
+                ", subjectivity=" + subjectivity +
                 '}';
     }
 }
